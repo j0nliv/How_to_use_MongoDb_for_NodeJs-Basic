@@ -1,0 +1,51 @@
+<HTML>
+<HEAD>
+<TITLE> MONGO DB </TITLE>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</HEAD>
+<BODY>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="https://www.mongodb.com/">MongoDB</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="/">Öğrenci Listesi <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="/ekle">Kayıt Ekle</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<br><br>
+<div class="container">
+	 <form action="/ekle" method="POST">
+            <div class="form-group">
+              <label for="ogrAdi">Öğrencinin Adı</label>
+              <input class="form-control" id="ogrAdi" aria-describedby="adYardim" placeholder="Adı Girin" name="adi">
+              <small id="adYardim" class="form-text text-muted">Bu alan boş geçilemez.</small>
+            </div>
+            <div class="form-group">
+              <label for="ogrSoyad">Öğrencinin Soyadı</label>
+              <input class="form-control" id="ogrAdi" aria-describedby="adYardim" placeholder="Soyadı Girin" name="soyadi">
+              <small id="soyadYardim" class="form-text text-muted">Bu alan boş geçilemez.</small>
+            </div>
+            <div class="form-group">
+              <label for="ogrNumara">Öğrencinin Numarası</label>
+              <input class="form-control" id="ogrNum" aria-describedby="yasYardim" placeholder="Numarayi Girin" name="numarasi">
+              <small id="numYardim" class="form-text text-muted">Bu alan boş geçilemez.</small>
+            </div>
+			<div class="form-group">
+              <label for="ogrSin">Öğrencinin Sınıfı</label>
+              <input class="form-control" id="ogrSinif" aria-describedby="sinYardim" placeholder="Sınıfı Girin" name="sinifi">
+              <small id="sinYardim" class="form-text text-muted">Bu alan boş geçilemez.</small>
+            </div>
+            <button type="submit" class="btn btn-primary">Kayıt Oluştur</button>
+    </form> 
+</div>
+</BODY>
+</HTML>
